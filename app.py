@@ -12,9 +12,38 @@ MODEL_ID = "google/gemma-3-27b-it:free"
 # --- CSS適用 (省略なし) ---
 st.markdown("""
 <style>
-    body { font-family: 'Arial', sans-serif; background-color: #b0c4de; color: #333; }
-    .stRadio > label { display: inline-block; background-color: #FFFFFF; border-radius: 10px; }
-    /* ...その他のスタイル... */
+    body {
+        font-family: 'Arial', sans-serif;
+        background-color: #b0c4de;
+        color: #333;
+    }
+    .css-1aumxhk, .css-hi6a2p, .st-bq, .st-b7 {
+        font-weight: bold; /* ラベルの文字を太く */
+    }
+    .stRadio > label {
+        display: inline-block;
+        background-color: #FFFFFF;
+        color: #333;
+        border-radius: 10px;
+    }
+    .stTextArea > div > div > textarea {
+        background-color: #FFFFFF;
+        border-color: #CCCCCC;
+    }
+    button.css-2trqyj {
+        background-color: #007BFF; /* ボタンの基本色 */
+        color: #FFFFFF;
+        border: none;
+        border-radius: 5px;
+        padding: 10px 24px;
+        font-size: 16px;
+        font-weight: bold;
+        transition: background-color 0.3s, box-shadow 0.3s;
+    }
+    button.css-2trqyj:hover {
+        background-color: #0056b3; /* ホバー時の色 */
+        box-shadow: 0 2px 10px 0 rgba(0,123,255,0.5); /* ホバー時の影 */
+    }
 </style>
 """, unsafe_allow_html=True)
 
