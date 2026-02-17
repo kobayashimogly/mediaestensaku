@@ -27,7 +27,7 @@ if st.button('添削する'):
         question_text = f"{industry}の{content_type}として、以下の内容を添削してください。\n\n点数100点満点中採点をして、改善案を３つ提示してその改善案を反映した{content_type}を教えてください。\n\n{content}。"
         
         # ぐるぐる回るローディング表示
-        with st.spinner('Qwenが考えています...'):
+        with st.spinner('分析中...'):
             try:
                 # OpenRouter APIへのリクエスト
                 response = requests.post(
