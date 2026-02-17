@@ -7,7 +7,7 @@ st.set_page_config(page_title='ES添削ツール', layout='wide')
 
 OPENROUTER_API_KEY = st.secrets["openrouter_api_key"]
 
-MODEL_ID = "qwen/qwen3-32b:free" 
+MODEL_ID = "google/gemma-3-27b-it:free" 
 
 # --- CSS適用 (省略なし) ---
 st.markdown("""
