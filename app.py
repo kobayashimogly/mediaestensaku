@@ -9,7 +9,7 @@ api_key = st.secrets["gemini_api_key"]
 genai.configure(api_key=api_key)
 
 # モデルの設定
-model = genai.GenerativeModel('gemini-2.0-flash')
+model = genai.GenerativeModel('gemini-2.5-pro')
 
 # タイトルと画像
 st.set_page_config(page_title='ES添削ツール', layout='wide')
